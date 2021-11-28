@@ -1,6 +1,6 @@
-# *Forecasting Net Prophet
+# *Forecasting Net Prophet*
 
-Overview- With over 200 million users, MercadoLibre is the most popular e-commerce site in Latin America. Iv've been tasked with analyzing the company's financial and user data in clever ways to make the company grow. In this application, I you want to find out if the ability to predict search traffic can translate into the ability to successfully trade the stock.
+Overview- With over 200 million users, MercadoLibre is the most popular e-commerce site in Latin America. I've been tasked with analyzing the company's financial and user data to make the company grow. In this application, I want to find out if the ability to predict search traffic can translate into the ability to successfully trade the stock.
 
 My first step is to find unususual patterns in hourly Google search traffic. Does the Google search traffic for the company link to any financial events at the company? To answer this question, I pick out any unusual patterns in the Google search data for the company, and connect them to the corporate financial events.
 I read the search data into a dataframe, and sliced the data to just the month of May 2020, the month that MercadoLibre released its quarterly financial results. I used hvplot to visualize the results and found that indead, there was a spike in search traffic during the month of May. The stock price for MercadoLibre spiked during the same month. This information can definetly be of use to the company.
@@ -15,6 +15,34 @@ Now, I need to produce a time series model that analyzes and forecasts patterns 
 I then plot the individual time series components of the model to show that 12:00-1:00 am seem exhibit the greatest popularity, tuesday and thursday seem to get the most search traffic per week, and October gets the least search traffic out of the rest of the months.
 
 With that, my data analytics for MercadoLibre is complete.
+
+---
+
+## Technologies
+
+This project leverages Python 3.7.
+
+---
+
+## Installation Guide
+
+I've created all the code using Google Collab, and that's where the code should be ran, as the user might run into some difficulties installing FB Prophet.
+
+---
+
+## Usage
+
+Simply run the code to view all the plots i have created . The plots are labeled for the user to understand the data.
+
+---
+
+## Contributors
+
+Just me, and a little bit of help from module 11.
+
+## License
+
+No license, feel free to copy the code any time.
 
 
 
